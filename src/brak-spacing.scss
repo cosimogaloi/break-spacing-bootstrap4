@@ -1,0 +1,37 @@
+
+// $grid-gutter-whidh definide in Bootstrap Variables
+$spacing-values: (
+    xs: $grid-gutter-width,
+    sm: $grid-gutter-width * 1.25,
+    md: $grid-gutter-width * 1.5,
+    lg: $grid-gutter-width * 1.75,
+    xl: $grid-gutter-width * 2
+);
+
+@mixin break-spacing($calc-value, $propety-array) {
+    @include media-breakpoint-only(xs) {
+        @each $propety in $propety-array {
+            #{$propety}: map-get($spacing-values, xs) * $calc-value;
+        }
+    }
+    @include media-breakpoint-only(sm) {
+        @each $propety in $propety-array {
+            #{$propety}: map-get($spacing-values, sm) * $calc-value;
+        }
+    }
+    @include media-breakpoint-only(md) {
+        @each $propety in $propety-array {
+            #{$propety}: map-get($spacing-values, md) * $calc-value;
+        }
+    }
+    @include media-breakpoint-only(lg) {
+        @each $propety in $propety-array {
+            #{$propety}: map-get($spacing-values, lg) * $calc-value;
+        }
+    }
+    @include media-breakpoint-only(xl) {
+        @each $propety in $propety-array {
+            #{$propety}: map-get($spacing-values, xl) * $calc-value;
+        }
+    }
+}

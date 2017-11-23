@@ -1,0 +1,28 @@
+{
+  "name": "break-spacing-bootstrap4",
+  "version": "0.1.0",
+  "description": "Generator Spacing Bootstrap 4 Media Breakpoints and Grid Gutter Width",
+  "main": "index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosimogaloi/break-spacing-bootstrap4.git"
+  },
+  "keywords": [
+    "Sass",
+    "Bootstrap",
+    "4",
+    "Spacing"
+  ],
+  "author": "Cosimo Aloi <cosimogaloi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cosimogaloi/break-spacing-bootstrap4/issues"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "npm-sass": "^2.2.1"
+  }
+}
